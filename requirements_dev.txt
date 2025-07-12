@@ -1,20 +1,41 @@
-bentoml==1.0.25
-#bentoml==1.0.10
-joblib==1.2.0
-pip-chill==1.0.1
-torchvision==0.22.1
-tqdm==4.64.1
-wincertstore==0.2
-dvc
-mlflow
-ipykernel
-pandas
-numpy
-seaborn
-pytest==7.1.3
-tox==3.25.1
-black==22.8.0
-flake8==5.0.4
-mypy==0.971
+bentoml==1.0.25         # ✅ BentoML: For model serving and packaging ML models as APIs (production-ready).
+# bentoml==1.0.10        # ❌ Older version of BentoML, commented out — not used.
+
+joblib==1.2.0           # 🛠️ Used for saving/loading ML models or functions (used often with scikit-learn).
+
+pip-chill==1.0.1        # 🧊 Tool to generate a clean list of only manually installed packages — useful for creating clean requirements.txt.
+
+# torchvision==0.22.1    # ❌ Newer version commented out — maybe incompatible with current PyTorch version.
+
+torch==2.7.1           # 🔥 PyTorch core library for deep learning. This version works with Python ≤3.10.
+
+torchvision==0.22.1     # 🖼️ Companion package to PyTorch for image-related tasks (e.g., transforms, pretrained CNNs).
+
+tqdm==4.64.1            # 📊 Used to show progress bars in loops — common in training loops or data preprocessing.
+
+wincertstore==0.2       # 🔐 Helps manage certificates on Windows systems (pip dependency in some Windows distros).
+
+dvc                    # 🔁 DVC (Data Version Control): Tracks ML datasets, models, and experiments (like Git but for data science).
+
+mlflow                 # 📈 Tool to manage ML experiments, track metrics, models, and deployment steps.
+
+ipykernel              # 💻 Enables Jupyter/IPython notebooks to work properly inside virtual environments.
+
+pandas                 # 🐼 Essential library for data manipulation and analysis (DataFrames, CSVs, etc.).
+
+numpy                  # 🔢 Core numerical computing library — base for many other scientific and ML libraries.
+
+seaborn                # 📊 High-level plotting library built on matplotlib — for beautiful visualizations.
+
+pytest==7.1.3          # 🧪 Unit testing framework to write and run test cases for your Python code.
+
+tox==3.25.1            # 🧪 Tool to automate and test your code in multiple Python environments.
+
+black==22.8.0          # 🎨 Code formatter — automatically formats your code to PEP 8 style.
+
+flake8==5.0.4          # 🔍 Linter — checks for syntax/style errors in Python code.
+
+mypy==0.971            # ✅ Static type checker — checks your type hints and helps prevent type-related bugs.
+
 
 # -e .
