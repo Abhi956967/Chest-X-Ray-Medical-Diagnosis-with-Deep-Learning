@@ -1,13 +1,13 @@
 from datetime import datetime
 from typing import List
 
-# import torch
+import torch
 
 TIMESTAMP: datetime = datetime.now().strftime("%m_%d_%Y_%H_%M_%S")
 
 ARTIFACT_DIR: str = "artifacts"
 
-BUCKET_NAME: str = "xraylungimgs"
+BUCKET_NAME: str = "lungxray9569"
 
 S3_DATA_FOLDER: str = "data"
 
