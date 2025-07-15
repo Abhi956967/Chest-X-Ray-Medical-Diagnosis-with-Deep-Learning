@@ -23,7 +23,7 @@ ipykernel              # 💻 Enables Jupyter/IPython notebooks to work properly
 
 pandas                 # 🐼 Essential library for data manipulation and analysis (DataFrames, CSVs, etc.).
 
-numpy                  # 🔢 Core numerical computing library — base for many other scientific and ML libraries.
+numpy==1.24.4                 # 🔢 Core numerical computing library — base for many other scientific and ML libraries.
 
 seaborn                # 📊 High-level plotting library built on matplotlib — for beautiful visualizations.
 
