@@ -7,14 +7,13 @@ from torch.utils.data import DataLoader, Dataset
 from torchvision import transforms
 from torchvision.datasets import ImageFolder
 
-from Xray.entity.artifact_entity import (
+from xray.entity.artifacts_entity import (
     DataIngestionArtifact,
     DataTransformationArtifact,
 )
-from Xray.entity.config_entity import DataTransformationConfig
-from Xray.exception import XRayException
-from Xray.logger import logging
-
+from xray.entity.config_entity import DataTransformationConfig
+from xray.exception import XRayException
+from xray.logger import logging
 
 
 class DataTransformation:
@@ -59,9 +58,7 @@ class DataTransformation:
 
         except Exception as e:
             raise XRayException(e, sys)
-        
-        
-        
+
     def transforming_testing_data(self) -> transforms.Compose:
         logging.info(
             "Entered the transforming_testing_data method of Data transformation class"
@@ -87,7 +84,7 @@ class DataTransformation:
 
         except Exception as e:
             raise XRayException(e, sys)
-        
+
     def data_loader(
         self, train_transform: transforms.Compose, test_transform: transforms.Compose
     ) -> Tuple[DataLoader, DataLoader]:
@@ -120,8 +117,7 @@ class DataTransformation:
 
         except Exception as e:
             raise XRayException(e, sys)
-        
-        
+
     def initiate_data_transformation(self) -> DataTransformationArtifact:
         try:
             logging.info(

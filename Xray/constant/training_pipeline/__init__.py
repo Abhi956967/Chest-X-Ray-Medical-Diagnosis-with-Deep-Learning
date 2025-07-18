@@ -5,16 +5,18 @@ import torch
 
 TIMESTAMP: datetime = datetime.now().strftime("%m_%d_%Y_%H_%M_%S")
 
+
+# Data Ingestion Constants
 ARTIFACT_DIR: str = "artifacts"
 
-BUCKET_NAME: str = "lungxray9569"
+BUCKET_NAME: str = "nidhi9569"
 
 S3_DATA_FOLDER: str = "data"
 
-CLASS_LABEL_1: str = "NORMAL"
 
 
-# data trasnforamtion
+
+## Data Transformation
 CLASS_LABEL_1: str = "NORMAL"
 
 CLASS_LABEL_2: str = "PNEUMONIA"
@@ -50,9 +52,7 @@ SHUFFLE: bool = False
 PIN_MEMORY: bool = True
 
 
-
-#model trainer constants
-
+# Model Training Constants
 TRAINED_MODEL_DIR: str = "trained_model"
 
 TRAINED_MODEL_NAME: str = "model.pt"
@@ -65,10 +65,14 @@ GAMMA: int = 0.5
 
 EPOCH: int = 1
 
-# BENTOML_MODEL_NAME: str = "xray_model"
 
-# BENTOML_SERVICE_NAME: str = "xray_service"
 
-# BENTOML_ECR_URI: str = "xray_bento_image"
+#model pusher
 
-# PREDICTION_LABEL: dict = {"0": CLASS_LABEL_1, 1: CLASS_LABEL_2}
+BENTOML_MODEL_NAME: str = "xray_model"
+
+BENTOML_SERVICE_NAME: str = "xray_service"
+
+BENTOML_ECR_IMAGE: str = "xray_bento_image"
+
+PREDICTION_LABEL: dict = {"0": CLASS_LABEL_1, 1: CLASS_LABEL_2}
