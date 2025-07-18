@@ -263,13 +263,14 @@
 
 import streamlit as st
 import os
+import sys
 import torch
 import numpy as np
 from torchvision.transforms import transforms
 from PIL import Image
 from pathlib import Path
 import matplotlib.pyplot as plt
-
+sys.path.append(os.path.abspath(os.path.dirname(__file__)))
 
 import torch
 from xray.model import MyModel  # Removed unresolved import
