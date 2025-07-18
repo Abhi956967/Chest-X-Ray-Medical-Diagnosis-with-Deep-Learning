@@ -21,4 +21,5 @@ mypy-boto3-s3
 streamlit 
 torch==2.7.1
 gunicorn
+matplotlib
 -e .
