@@ -270,6 +270,14 @@ from PIL import Image
 from pathlib import Path
 import matplotlib.pyplot as plt
 
+
+
+
+
+model = torch.load("model/model.pt", map_location=torch.device('cpu'), weights_only=False)
+model.eval()
+
+
 # Page configuration
 st.set_page_config(page_title="X-ray Lung Classifier", page_icon="🩻", layout="wide")
 
