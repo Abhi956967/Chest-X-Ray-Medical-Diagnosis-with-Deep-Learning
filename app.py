@@ -271,7 +271,10 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 
 
+import torch
+from xray.model import MyModel  # Removed unresolved import
 
+# Removed unused MyModel loading code
 
 
 model = torch.load("model/model.pt", map_location=torch.device('cpu'), weights_only=False)
