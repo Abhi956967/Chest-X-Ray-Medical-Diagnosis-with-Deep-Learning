@@ -7,7 +7,7 @@ pip-chill==1.0.1        # 🧊 Tool to generate a clean list of only manually in
 
 # torchvision==0.22.1    # ❌ Newer version commented out — maybe incompatible with current PyTorch version.
 
-torch==1.13.1           # 🔥 PyTorch core library for deep learning. This version works with Python ≤3.10.
+torch==2.7.1           # 🔥 PyTorch core library for deep learning. This version works with Python ≤3.10.
 
 torchvision==0.14.1     # 🖼️ Companion package to PyTorch for image-related tasks (e.g., transforms, pretrained CNNs).
 
