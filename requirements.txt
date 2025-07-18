@@ -22,4 +22,7 @@ streamlit
 torch==2.7.1
 gunicorn
 matplotlib
+Pillow
+numpy
+streamlit
 -e .
