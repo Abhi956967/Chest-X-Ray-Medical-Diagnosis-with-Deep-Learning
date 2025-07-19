@@ -9,9 +9,6 @@ from PIL import Image as PILImage
 from xray.constant.training_pipeline import *
 
 
-import torch
-import xray.ml.model.arch  # Replace with correct import path if needed
-from torch.serialization import add_safe_globals
 
 
 bento_model = bentoml.pytorch.get(BENTOML_MODEL_NAME)
@@ -45,13 +42,7 @@ async def predict(img):
 
 
 
-# Register the Net class for safe loading
-add_safe_globals([xray.ml.model.arch.Net])
 
-def load_model():
-    model = torch.load("model/model.pt", map_location=torch.device('cpu'), weights_only=False)
-    model.eval()
-    return model
 
 
 
