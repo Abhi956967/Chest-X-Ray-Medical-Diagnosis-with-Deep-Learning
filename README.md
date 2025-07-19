@@ -37,3 +37,16 @@ gap	Global Average Pooling (4×4)
 convolution_block_out	Conv2d (16→2, 4×4)
 output	Flatten to shape (-1, 2), Log-Softmax
 
+
+
+
+<img width="1920" height="1080" alt="Screenshot (19)" src="https://github.com/user-attachments/assets/fef15d0f-944a-4cec-b09b-9d4109190df4" />
+
+
+
+<img width="1920" height="1080" alt="Screenshot (20)" src="https://github.com/user-attachments/assets/805b8c91-1aba-4d5d-af30-d5f605b6a6e6" />
+
+
+<img width="1920" height="1080" alt="Screenshot (21)" src="https://github.com/user-attachments/assets/ea758f22-ba46-41a5-806a-4254a23ff7ca" />
+
+
